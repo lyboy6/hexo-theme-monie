@@ -1,0 +1,26 @@
+- var pageTitle
+//- - is_archive() ? page.title = findArchivesTitle(page, theme.menu, date) : ''
+- if (is_tag()) pageTitle = _p('page.tag') + ': ' + page.tag
+- else if (is_category()) pageTitle = _p('page.category') + ': ' + page.category
+- else pageTitle = page.title || config.title || ''
+- var isSubtitle = config.subtitle ? ' - ' + config.subtitle : ''
+- var tabTitle = is_home() || !pageTitle ? config.title + isSubtitle : pageTitle + ' | ' + config.title
+
+
+- var pageKeywords
+- if (page.keywords) pageKeywords = Array.isArray(page.keywords) ? (page.keywords).join(',') :  ([]).join(',') || page.keywords
+- else if (page.tags && page.tags.length) pageKeywords = page.tags.data.map(function(tag) {return tag.name;}).join(',')
+- else pageKeywords = Array.isArray(config.keywords) ? (config.keywords).join(','):  ([]).join(',') || config.keywords
+
+
+meta(charset='UTF-8')
+meta(http-equiv="X-UA-Compatible" content="IE=edge")
+meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+title= tabTitle
+if pageKeywords
+  meta(name="keywords" content=pageKeywords)
+
+link(rel="stylesheet", href=url_for('https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css'))
+link(rel='stylesheet', href=url_for('https://at.alicdn.com/t/c/font_3435803_wadmwlqwhps.css'))
+link(rel='stylesheet', href=url_for('/style/index.css'))

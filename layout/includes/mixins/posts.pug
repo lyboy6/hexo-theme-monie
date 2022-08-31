@@ -1,0 +1,24 @@
+.article_container
+  .container
+    .article_lists.clearfix
+      if posts.length
+        each value, index  in posts.data
+          .article_items.yu13_card_5.yu13_translatey_3
+            .article_pic
+              a(href=url_for(value.path)) 
+                img.lazyload(src=url_for('assets/images/random/1.jpg'), alt="")
+            .article_content
+              h2.title.yu13_clamp_2
+              a(href=url_for(value.path), title='')= value.title 
+              .article_category
+                .sort
+                  a(href=url_for(value.categories.data[0].path))
+                    i.yufont.icon-yingyong
+                    = value.categories.data[0].name
+              .article_bottom
+                .article_author
+                  include ./posts/avatar
+                  = config.author
+                .time
+                  i.yufont.icon-shijian
+                  span= '2022-06-24'

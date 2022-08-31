@@ -1,0 +1,16 @@
+.footer_bottom {
+  background-color: #222;
+  color: #676b6f;
+  font-size: 13px;
+}
+
+.footer_bottom .footer_box {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer a {color: #676b6f;}
+
+.footer a:hover {color: #fff;}

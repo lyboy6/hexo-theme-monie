@@ -1,0 +1,14 @@
+doctype html
+html(lang=config.language)
+  head
+    include ./header/head.pug
+  body
+    div#app
+      include ./header/index
+      if path === 'index.html'
+        include ./home/homebg
+      if body
+        div!= body
+      else
+        block content
+      include ./footer

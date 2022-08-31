@@ -1,0 +1,40 @@
+# Blog
+# Miscellaneous
+favicon: /assets/imgs/favicon.ico
+# Logo
+logo: '/assets/imgs/logo.png'
+# Home 首页标题
+blog_title: '最新文章 · 资源上新'
+# Home 首页Info
+blog_des: '授人以鱼，不如授人以渔。业精于勤，荒于嬉；行成于思，毁于随。'
+# 头像
+avatar: '/assets/imgs/avatar.jpg'
+#个人主页
+author_url: '/about'
+# 个人介绍
+author_desc: '不断学习，不断提升！'
+# 旗下业务
+blog_ascription:
+  - name: studynotes
+    url: http://note.13wl.cn
+  - name: pithyAPI
+    url: http://api.13wl.cn
+# Header
+menu:
+  - menu_name: 首页
+    menu_link: /
+  - menu_name: 归档
+    menu_link: /archives
+  - menu_name: 分类
+    menu_link: /categorys
+  - menu_name: 标签
+    menu_link: /tags
+  - menu_name: 友情链接
+    menu_link: /links
+# Content
+
+# Sidebar
+
+# widget behavior
+
+#  page setting

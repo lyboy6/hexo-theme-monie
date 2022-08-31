@@ -1,0 +1,6 @@
+extends includes/layout.pug
+block content
+  != partial('./includes/mixins/posts', { posts: page.posts }, {cache: true})
+  div.page_container
+    .lists_nav
+      != paginator({ prev_text: '<',next_text: '>' })

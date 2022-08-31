@@ -1,0 +1,18 @@
+{
+  "name": "monie",
+  "version": "1.0.0",
+  "description": "hexo-theme-monie 预览版 1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/lyboy6/hexo-themes-monie.git"
+  },
+  "keywords": [
+    "hexo",
+    "monie",
+    "博客模板"
+  ],
+  "author": "yu_十三",
+  "license": "ISC"
+}

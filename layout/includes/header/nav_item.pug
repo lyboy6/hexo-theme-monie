@@ -1,0 +1,17 @@
+each value, index  in theme.menu
+  li.menu_nav
+    a(href=url_for(value.menu_link ? value.menu_link : 'javascript:;'))
+      i.fas(class=value.menu_font)
+      span=' '+value.menu_name
+      if value.list_link
+        //- <i class="yufont icon-jiantouxia"></i>
+        i.fas.fa-chevron-down
+    if value.list_link
+      div.sub-menu
+        ul
+          each link  in value.list_link
+            li
+              a(href=url_for(link.menu_link))
+                span=' '+link.menu_name
+
+
