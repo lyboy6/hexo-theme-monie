@@ -1,0 +1,7 @@
+.article_tags
+  span 
+    i.yufont.icon-tag
+    = ' 标签: '
+  if tags.length 
+    each value, index  in tags.data
+      a(href=url_for(value.path))=  value.name

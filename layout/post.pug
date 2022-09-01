@@ -1,1 +1,25 @@
 extends includes/layout.pug
+block content
+  != partial('./includes/archive',{}, {cache: true})
+  .container.log_container.clearfix
+    .article_content.left 
+      .article_main
+        article.content
+          .content_text.article_text 
+            != page.content
+          != partial('./includes/archive/tags',{tags: page.tags}, {cache: true})
+        .article-copyright
+          p
+            = '标题: '
+            a(href="")= page.title 
+          p 
+            = '链接: '
+            a(href="")= page.permalink 
+          p 
+            = '版权声明: 若无特殊标注皆为 '
+            = config.author
+            = ' 原创版权, 转载请以链接形式注明作者及原始出处'
+          p
+           = '最后编辑时间: '
+           = date(page.update,  'YYYY-MM-DD')
+    != partial('./includes/sidebar/sidebar',{page: page}, { cache: false  })

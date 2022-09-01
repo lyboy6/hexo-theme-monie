@@ -1,0 +1,22 @@
+.author_sidebar.sidebar_container
+  .author_info
+    .avatar
+      != partial('../mixins/posts/avatar',{}, { cache: true  })
+    .author_name
+      h3
+        a(href="")= config.author
+      p= theme.author_desc
+  .author_data
+    ul
+      li 
+        div 
+          span= site.posts.length
+          p= '文章'
+      li 
+        div 
+          span= site.categories.length
+          p= '分类'
+      li 
+        div 
+          span= site.tags.length
+          p= '标签'

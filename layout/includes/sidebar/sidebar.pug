@@ -1,0 +1,5 @@
+.article_sidebar.left
+  != partial('./author',{}, { cache: false  })
+  != partial('./catalogue',{page: page}, { cache: false  })
+  != partial('./sort',{page: page}, { cache: false  })
+  != partial('./tags',{page: page}, { cache: false  })

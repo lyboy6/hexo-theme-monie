@@ -1,0 +1,16 @@
+.article_topbg
+  .topbg_container
+    h1.title 
+      a(href="")= 'hexo-theme-yublog'
+    .info
+      .article_meta
+        .left
+          span.avatar
+            != partial('./mixins/posts/avatar',{},{ cache: true })
+            a(href="/")= config.author 
+          span
+            i.yufont.icon-yingyong
+            != partial('./mixins/posts/categories',{ categories: page.categories },{ cache: true })
+          span
+            i.yufont.icon-rili
+            !=  date(page.updated, 'YYYY-M-D') 
