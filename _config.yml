@@ -3,6 +3,10 @@
 favicon: /assets/imgs/favicon.ico
 # Logo
 logo: '/assets/imgs/logo.png'
+# Home Info
+home_info:
+  - info: 'Monie 1.0.0 预览版 正式完工了！！！'
+  - info: '这是我的个人博客，致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。'
 # Home 首页标题
 blog_title: '最新文章 · 资源上新'
 # Home 首页Info

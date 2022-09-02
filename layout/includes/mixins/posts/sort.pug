@@ -1,0 +1,8 @@
+if !categories.length 
+  span
+    i.yufont.icon-yingyong
+    = '暂无分类'
+else 
+  a(href=url_for(categories.data[0].path))
+    i.yufont.icon-yingyong
+    = categories.data[0].name

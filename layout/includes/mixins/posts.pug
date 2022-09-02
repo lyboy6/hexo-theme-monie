@@ -12,9 +12,7 @@
               a(href=url_for(value.path), title='')= value.title 
               .article_category
                 .sort
-                  a(href=url_for(value.categories.data[0].path))
-                    i.yufont.icon-yingyong
-                    = value.categories.data[0].name
+                  != partial('./posts/sort',{ categories: value.categories },{ cache: false  })
               .article_bottom
                 .article_author
                   include ./posts/avatar

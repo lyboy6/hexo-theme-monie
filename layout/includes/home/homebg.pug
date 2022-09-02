@@ -2,15 +2,16 @@
   .home_bg_container
     .left_info
       .title= 'Hello! 我是 '
-        span.name= ' yu_十三'
-      .info= 'Monie 1.0.0 预览版 正式完工了！！！'
-      .info= '这是我的个人博客，致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。'
+        span.name= config.author
+      if theme.home_info.length 
+        each value, index in theme.home_info
+         .info= value.info
       .goto_btn
         .yu13_btn
           i.yufont.icon-github-fill
           = 'GitHub'
         .yu13_btn
-          i.yufont.icon-github-fill
-          = 'GitHub'
+          i.yufont.icon-gitee-fill-round
+          = 'Gitee'
     .right_icon
      img(src=url_for('/img/index.svg'), alt="首页")

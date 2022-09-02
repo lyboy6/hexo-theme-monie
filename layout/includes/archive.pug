@@ -10,7 +10,7 @@
             a(href="/")= config.author 
           span
             i.yufont.icon-yingyong
-            != partial('./mixins/posts/categories',{ categories: page.categories },{ cache: true })
+            != partial('./mixins/posts/categories',{ categories: page.categories },{ cache: false  })
           span
             i.yufont.icon-rili
             !=  date(page.updated, 'YYYY-M-D') 

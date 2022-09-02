@@ -1,1 +1,4 @@
-a(href=url_for(categories.data[0].path))= categories.data[0].name 
+if !categories.length 
+  span= '暂无分类'
+else
+  a(href=url_for(categories.data[0].path))= categories.data[0].name 

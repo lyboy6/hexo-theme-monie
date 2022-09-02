@@ -1,13 +1,13 @@
 extends includes/layout.pug
 block content
-  != partial('./includes/archive',{}, {cache: true})
+  != partial('./includes/archive',{}, {cache: false})
   .container.log_container.clearfix
     .article_content.left 
       .article_main
         article.content
           .content_text.article_text 
             != page.content
-          != partial('./includes/archive/tags',{tags: page.tags}, {cache: true})
+          != partial('./includes/archive/tags',{tags: page.tags}, {cache: false})
         .article-copyright
           p
             = '标题: '
