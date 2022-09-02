@@ -1,1 +1,19 @@
 extends includes/layout.pug
+block content
+  .article_topbg.sort_topbg
+    .topbg_container
+      h2.title
+       = '归档 - ' + date(page.posts.data[0].updated, 'YYYY')
+      .info= ''
+  .ergodic
+    .ergodic_item.all_sort
+      p= '全部分类'
+    ul.clearfix
+      if site.categories.length 
+        each value, index  in site.categories.data
+          li(class= value.name == page.category ? 'active' : '')
+            a(href=url_for(value.path))= value.name
+  != partial('./includes/mixins/posts',{posts: page.posts},{ cache: false  })
+  div.page_container
+    .lists_nav
+      != paginator({ prev_text: '<',next_text: '>' })

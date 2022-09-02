@@ -1,10 +1,14 @@
 $(function () {
-  hide()
 
-  // 监听 home_down
-  $('#home_down').on('click', (e) => {
-    $('body,html').animate({ scrollTop: $('.home_bg').height() }, 500)
-  })
+
+
+
+  // 代码高亮
+  if ($('pre').length) {
+    $('pre').addClass('prettyprint')
+    prettyPrint()
+  }
+
 
   // 手机侧边栏
   $('#mobile_menu').on('click', (e) => {
@@ -23,7 +27,7 @@ $(function () {
 
 
   // 图层预览
-  $('.article_text img').attr('data-src', function (_index, src = '') {
+  $('.article_text img').attr('src', function (_index, src = '') {
     let title = '文章图' + ++_index
     if ($(this).attr('alt')) title = $(this).attr('alt').slice(0, -4)
     $(this).attr('alt', title)
@@ -37,16 +41,6 @@ $(function () {
       $(this).parent('a').attr('data-fancybox', 'gallery')
     }
   })
-})
 
-// Home down
-function hide () {
-  $('#home_down').animate({ bottom: '0', opacity: 'hide' }, 'slow', () => {
-    show()
-  })
-}
-function show () {
-  $('#home_down').animate({ bottom: '20px', opacity: 'show' }, 'slow', () => {
-    hide()
-  })
-}
+
+})
