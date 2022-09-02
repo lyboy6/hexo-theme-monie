@@ -1,6 +1,9 @@
 $(function () {
 
-
+  // 文章缩略图固定高度
+  $('.article_pic img').attr('height', function (_index, height = 0) {
+    $(this).css({ 'height': $(this).parent().parent().outerHeight() })
+  })
 
 
   // 代码高亮

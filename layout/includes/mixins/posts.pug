@@ -6,7 +6,7 @@
           .article_items.yu13_card_5.yu13_translatey_3
             .article_pic
               a(href=url_for(value.path)) 
-                img.lazyload(src=url_for('assets/images/random/1.jpg'), alt="")
+                img.lazyload(src=url_for(content_img(value.content)), alt="")
             .article_content
               h2.title.yu13_clamp_2
               a(href=url_for(value.path), title='')= value.title 
