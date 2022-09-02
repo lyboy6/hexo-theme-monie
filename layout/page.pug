@@ -1,0 +1,14 @@
+extends includes/layout.pug
+
+block content
+  != partial('./includes/page/top',{page: page}, {cache: false})
+  case page.type
+    when 'tags'
+      include includes/page/tags.pug
+    when 'link'
+      include includes/page/link.pug
+    when 'categories'
+      include includes/page/categories.pug
+    default
+      include includes/page/default-page.pug
+

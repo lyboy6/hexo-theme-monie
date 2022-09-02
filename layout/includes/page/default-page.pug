@@ -1,0 +1,7 @@
+.container.log_container.clearfix
+  .article_content.left 
+    .article_main
+      article.content
+        .content_text.article_text
+          != page.content
+  != partial('./includes/sidebar/sidebar',{page: page}, { cache: false  })

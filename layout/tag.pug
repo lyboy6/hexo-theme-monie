@@ -3,10 +3,9 @@ block content
   .article_topbg.sort_topbg
     .topbg_container
       h2.title
-        = '分类 - '+page.category
+        = '标签 - '+page.tag
       .info= '相关文章累计 ' + page.posts.length + ' 篇文章'
   != partial('./includes/mixins/posts',{posts: page.posts},{ cache: false  })
   div.page_container
    .lists_nav
-     != paginator({ prev_text: '<i class="fa fa-angle-left"></i>',next_text: '<i class="fa fa-angle-right"></i>', escape: false })
-  
+    != paginator({ prev_text: '<i class="fa fa-angle-left"></i>',next_text: '<i class="fa fa-angle-right"></i>', escape: false })

@@ -425,6 +425,10 @@
   color: #fff;
 }
 
+.topbg_container .info {
+  margin-top: 20px;
+}
+
 /* 分页 */
 
 .ergodic {

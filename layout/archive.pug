@@ -16,4 +16,4 @@ block content
   != partial('./includes/mixins/posts',{posts: page.posts},{ cache: false  })
   div.page_container
     .lists_nav
-      != paginator({ prev_text: '<',next_text: '>' })
+      != paginator({ prev_text: '<i class="fa fa-angle-left"></i>',next_text: '<i class="fa fa-angle-right"></i>', escape: false })   

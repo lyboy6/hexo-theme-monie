@@ -22,7 +22,7 @@
       function g (a) {
         for (var j = a.e, k = [j, "pln"], c = 0, i = a.a.match(s) || [], r = {}, n = 0, e = i.length; n < e; ++n) {
           var z = i[n], w = r[z], t = void 0, f; if (typeof w === "string") f = !1; else {
-            var h = b[z.charAt(0)];
+            var h = b[z.charAt(0)]
             if (h) t = z.match(h[1]), w = h[0]; else { for (f = 0; f < x; ++f)if (h = d[f], t = z.match(h[1])) { w = h[0]; break } t || (w = "pln") } if ((f = w.length >= 5 && "lang-" === w.substring(0, 5)) && !(t && typeof t[1] === "string")) f = !1, w = "src"; f || (r[z] = w)
           } h = c; c += z.length; if (f) { f = t[1]; var l = z.indexOf(f), B = l + f.length; t[2] && (B = z.length - t[2].length, l = B - f.length); w = w.substring(5); H(j + h, z.substring(0, l), g, k); H(j + h + l, f, I(w, f), k); H(j + h + B, z.substring(B), g, k) } else k.push(j + h, w)
         } a.g = k
@@ -46,11 +46,11 @@
           var d =
             c ? a.cloneNode(!1) : a, e = a.parentNode; if (e) { var e = b(e, 1), g = a.nextSibling; e.appendChild(d); for (var i = g; i; i = g)g = i.nextSibling, e.appendChild(i) } return d
         } for (; !a.nextSibling;)if (a = a.parentNode, !a) return; for (var a = b(a.nextSibling, 0), d; (d = a.parentNode) && d.nodeType === 1;)a = d; c.push(a)
-      } for (var x = /(?:^|\s)nocode(?:\s|$)/, m = /\r\n?|\n/, j = a.ownerDocument, k = j.createElement("li"); a.firstChild;)k.appendChild(a.firstChild); for (var c = [k], i = 0; i < c.length; ++i)b(c[i]); d === (d | 0) && c[0].setAttribute("value", d); var r = j.createElement("ol");
+      } for (var x = /(?:^|\s)nocode(?:\s|$)/, m = /\r\n?|\n/, j = a.ownerDocument, k = j.createElement("li"); a.firstChild;)k.appendChild(a.firstChild); for (var c = [k], i = 0; i < c.length; ++i)b(c[i]); d === (d | 0) && c[0].setAttribute("value", d); var r = j.createElement("ol")
       r.className = "linenums"; for (var d = Math.max(0, d - 1 | 0) || 0, i = 0, n = c.length; i < n; ++i)k = c[i], k.className = "L" + (i + d) % 10, k.firstChild || k.appendChild(j.createTextNode("\u00a0")), r.appendChild(k); a.appendChild(r)
     } function p (a, d) { for (var g = d.length; --g >= 0;) { var b = d[g]; F.hasOwnProperty(b) ? D.console && console.warn("cannot override language handler %s", b) : F[b] = a } } function I (a, d) { if (!a || !F.hasOwnProperty(a)) a = /^\s*</.test(d) ? "default-markup" : "default-code"; return F[a] } function K (a) {
       var d = a.h; try {
-        var g = T(a.c, a.i), b = g.a;
+        var g = T(a.c, a.i), b = g.a
         a.a = b; a.d = g.d; a.e = 0; I(d, b)(a); var s = /\bMSIE\s(\d+)/.exec(navigator.userAgent), s = s && +s[1] <= 8, d = /\n/g, x = a.a, m = x.length, g = 0, j = a.d, k = j.length, b = 0, c = a.g, i = c.length, r = 0; c[i] = m; var n, e; for (e = n = 0; e < i;)c[e] !== c[e + 2] ? (c[n++] = c[e++], c[n++] = c[e++]) : e += 2; i = n; for (e = n = 0; e < i;) { for (var p = c[e], w = c[e + 1], t = e + 2; t + 2 <= i && c[t + 1] === w;)t += 2; c[n++] = p; c[n++] = w; e = t } c.length = n; var f = a.c, h; if (f) h = f.style.display, f.style.display = "none"; try {
           for (; b < k;) {
             var l = j[b + 2] || m, B = c[r + 2] || m, t = Math.min(l, B), A = j[b + 1], G; if (A.nodeType !== 1 && (G = x.substring(g,
@@ -68,10 +68,10 @@
           ["cs"]); p(v({ keywords: N, cStyleComments: !0 }), ["java"]); p(v({ keywords: y, hashComments: !0, multiLineStrings: !0 }), ["bash", "bsh", "csh", "sh"]); p(v({ keywords: P, hashComments: !0, multiLineStrings: !0, tripleQuotedStrings: !0 }), ["cv", "py", "python"]); p(v({ keywords: "caller,delete,die,do,dump,elsif,eval,exit,foreach,for,goto,if,import,last,local,my,next,no,our,print,package,redo,require,sub,undef,unless,until,use,wantarray,while,BEGIN,END", hashComments: !0, multiLineStrings: !0, regexLiterals: 2 }), ["perl", "pl", "pm"]); p(v({
             keywords: Q,
             hashComments: !0, multiLineStrings: !0, regexLiterals: !0
-          }), ["rb", "ruby"]); p(v({ keywords: E, cStyleComments: !0, regexLiterals: !0 }), ["javascript", "js"]); p(v({ keywords: "all,and,by,catch,class,else,extends,false,finally,for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then,throw,true,try,unless,until,when,while,yes", hashComments: 3, cStyleComments: !0, multilineStrings: !0, tripleQuotedStrings: !0, regexLiterals: !0 }), ["coffee"]); p(v({ keywords: W, cStyleComments: !0, multilineStrings: !0 }), ["rc", "rs", "rust"]);
+          }), ["rb", "ruby"]); p(v({ keywords: E, cStyleComments: !0, regexLiterals: !0 }), ["javascript", "js"]); p(v({ keywords: "all,and,by,catch,class,else,extends,false,finally,for,if,in,is,isnt,loop,new,no,not,null,of,off,on,or,return,super,then,throw,true,try,unless,until,when,while,yes", hashComments: 3, cStyleComments: !0, multilineStrings: !0, tripleQuotedStrings: !0, regexLiterals: !0 }), ["coffee"]); p(v({ keywords: W, cStyleComments: !0, multilineStrings: !0 }), ["rc", "rs", "rust"])
     p(C([], [["str", /^[\S\s]+/]]), ["regex"]); var Y = D.PR = {
       createSimpleLexer: C, registerLangHandler: p, sourceDecorator: v, PR_ATTRIB_NAME: "atn", PR_ATTRIB_VALUE: "atv", PR_COMMENT: "com", PR_DECLARATION: "dec", PR_KEYWORD: "kwd", PR_LITERAL: "lit", PR_NOCODE: "nocode", PR_PLAIN: "pln", PR_PUNCTUATION: "pun", PR_SOURCE: "src", PR_STRING: "str", PR_TAG: "tag", PR_TYPE: "typ", prettyPrintOne: D.prettyPrintOne = function (a, d, g) {
-        var b = document.createElement("div"); b.innerHTML = "<pre>" + a + "</pre>"; b = b.firstChild; g && J(b, g, !0); K({ h: d, j: g, c: b, i: 1 });
+        var b = document.createElement("div"); b.innerHTML = "<pre>" + a + "</pre>"; b = b.firstChild; g && J(b, g, !0); K({ h: d, j: g, c: b, i: 1 })
         return b.innerHTML
       }, prettyPrint: D.prettyPrint = function (a, d) {
         function g () {
@@ -88,13 +88,13 @@
           h = {}; g()
       }
     }; typeof define === "function" && define.amd && define("google-code-prettify", [], function () { return Y })
-  })();
+  })()
 }()
 
-// CSS璇硶鏀寔
+// CSS语法支持
 PR.registerLangHandler(PR.createSimpleLexer([["pln", /^[\t\n\f\r ]+/, null, " \t\r\n\u000c"]], [["str", /^"(?:[^\n\f\r"\\]|\\(?:\r\n?|\n|\f)|\\[\S\s])*"/, null], ["str", /^'(?:[^\n\f\r'\\]|\\(?:\r\n?|\n|\f)|\\[\S\s])*'/, null], ["lang-css-str", /^url\(([^"')]+)\)/i], ["kwd", /^(?:url|rgb|!important|@import|@page|@media|@charset|inherit)(?=[^\w-]|$)/i, null], ["lang-css-kw", /^(-?(?:[_a-z]|\\[\da-f]+ ?)(?:[\w-]|\\\\[\da-f]+ ?)*)\s*:/i], ["com", /^\/\*[^*]*\*+(?:[^*/][^*]*\*+)*\//],
-["com", /^(?:<\!--|--\>)/], ["lit", /^(?:\d+|\d*\.\d+)(?:%|[a-z]+)?/i], ["lit", /^#[\da-f]{3,6}\b/i], ["pln", /^-?(?:[_a-z]|\\[\da-f]+ ?)(?:[\w-]|\\\\[\da-f]+ ?)*/i], ["pun", /^[^\s\w"']+/]]), ["css"]); PR.registerLangHandler(PR.createSimpleLexer([], [["kwd", /^-?(?:[_a-z]|\\[\da-f]+ ?)(?:[\w-]|\\\\[\da-f]+ ?)*/i]]), ["css-kw"]); PR.registerLangHandler(PR.createSimpleLexer([], [["str", /^[^"')]+/]]), ["css-str"]);
+["com", /^(?:<\!--|--\>)/], ["lit", /^(?:\d+|\d*\.\d+)(?:%|[a-z]+)?/i], ["lit", /^#[\da-f]{3,6}\b/i], ["pln", /^-?(?:[_a-z]|\\[\da-f]+ ?)(?:[\w-]|\\\\[\da-f]+ ?)*/i], ["pun", /^[^\s\w"']+/]]), ["css"]); PR.registerLangHandler(PR.createSimpleLexer([], [["kwd", /^-?(?:[_a-z]|\\[\da-f]+ ?)(?:[\w-]|\\\\[\da-f]+ ?)*/i]]), ["css-kw"]); PR.registerLangHandler(PR.createSimpleLexer([], [["str", /^[^"')]+/]]), ["css-str"])
 
-// SQL璇硶鏀寔
+// SQL语法支持
 PR.registerLangHandler(PR.createSimpleLexer([["pln", /^[\t\n\r \xa0]+/, null, "\t\n\r \u00a0"], ["str", /^(?:"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/, null, "\"'"]], [["com", /^(?:--[^\n\r]*|\/\*[\S\s]*?(?:\*\/|$))/], ["kwd", /^(?:add|all|alter|and|any|apply|as|asc|authorization|backup|begin|between|break|browse|bulk|by|cascade|case|check|checkpoint|close|clustered|coalesce|collate|column|commit|compute|connect|constraint|contains|containstable|continue|convert|create|cross|current|current_date|current_time|current_timestamp|current_user|cursor|database|dbcc|deallocate|declare|default|delete|deny|desc|disk|distinct|distributed|double|drop|dummy|dump|else|end|errlvl|escape|except|exec|execute|exists|exit|fetch|file|fillfactor|following|for|foreign|freetext|freetexttable|from|full|function|goto|grant|group|having|holdlock|identity|identitycol|identity_insert|if|in|index|inner|insert|intersect|into|is|join|key|kill|left|like|lineno|load|match|matched|merge|natural|national|nocheck|nonclustered|nocycle|not|null|nullif|of|off|offsets|on|open|opendatasource|openquery|openrowset|openxml|option|or|order|outer|over|partition|percent|pivot|plan|preceding|precision|primary|print|proc|procedure|public|raiserror|read|readtext|reconfigure|references|replication|restore|restrict|return|revoke|right|rollback|rowcount|rowguidcol|rows?|rule|save|schema|select|session_user|set|setuser|shutdown|some|start|statistics|system_user|table|textsize|then|to|top|tran|transaction|trigger|truncate|tsequal|unbounded|union|unique|unpivot|update|updatetext|use|user|using|values|varying|view|waitfor|when|where|while|with|within|writetext|xml)(?=[^\w-]|$)/i,
   null], ["lit", /^[+-]?(?:0x[\da-f]+|(?:\.\d+|\d+(?:\.\d*)?)(?:e[+-]?\d+)?)/i], ["pln", /^[_a-z][\w-]*/i], ["pun", /^[^\w\t\n\r "'\xa0][^\w\t\n\r "'+\xa0-]*/]]), ["sql"]);

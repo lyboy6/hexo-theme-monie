@@ -1,0 +1,12 @@
+.container.log_container.clearfix
+  .article_content.left 
+    .article_main
+      article.content
+        .content_text.article_text
+            .archive_lists
+            .category-list
+              if site.tags.length
+                each value, index  in site.tags.data 
+                  li
+                  a(href=url_for(value.path))=  value.name+' ('+value.posts.length+')'
+  != partial('./includes/sidebar/sidebar',{page: page}, { cache: false  })

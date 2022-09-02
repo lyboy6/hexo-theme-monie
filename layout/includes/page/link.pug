@@ -1,0 +1,24 @@
+.container.log_container.clearfix
+  .article_content.left 
+    .article_main
+      article.content
+        .content_text
+          if site.data.link
+            each value,index in site.data.link
+              h2= value.class_name
+              .link_info= value.class_desc
+              .relevant_article
+                .article_lists.clearfix
+                  if value.link_list
+                    each link,i in value.link_list
+                      .article_items.yu13_card_4.yu13_translatey_3
+                        .article_pic
+                          a(href=link.link, target="_blank", rel="noopener")
+                            img(src=link.pic, alt=link.name)
+                        .article_content
+                          .article_bottom
+                            .article_author 
+                              img(src=link.icon, alt="")
+                              span= link.name
+                          .article_category= link.descr
+  != partial('./includes/sidebar/sidebar',{page: page}, { cache: false  })
