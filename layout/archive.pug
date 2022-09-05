@@ -1,10 +1,7 @@
 extends includes/layout.pug
 block content
-  .article_topbg.sort_topbg
-    .topbg_container
-      h2.title
-       = '归档 - ' + date(page.posts.data[0].updated, 'YYYY')
-      .info= ''
+  - var dateTime = page.posts.data[0].updated
+  != partial('./includes/mixins/page/top-bg',{title : '归档- ' + date(dateTime, 'YYYY') }, {cache: false})
   .ergodic
     .ergodic_item.all_sort
       p= '全部分类'

@@ -1,7 +1,9 @@
-.article_topbg
+- var top_img = '/assets/imgs/top_bg.jpg'
+- var top_bg = `background-image: url('${url_for(top_img)}')`
+
+.article_topbg(style=top_bg)
   .topbg_container
-    h1.title 
-      a(href="")= 'hexo-theme-yublog'
+    h1.title= page.title
     .info
       .article_meta
         .left

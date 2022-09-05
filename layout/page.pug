@@ -1,7 +1,7 @@
 extends includes/layout.pug
 
 block content
-  != partial('./includes/page/top',{page: page}, {cache: false})
+  != partial('./includes/mixins/page/top-bg',{title : page.title}, {cache: false})
   case page.type
     when 'tags'
       include includes/page/tags.pug

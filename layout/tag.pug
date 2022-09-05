@@ -1,10 +1,8 @@
 extends includes/layout.pug
 block content
-  .article_topbg.sort_topbg
-    .topbg_container
-      h2.title
-        = '标签 - '+page.tag
-      .info= '相关文章累计 ' + page.posts.length + ' 篇文章'
+  - var title = '标签 - '+page.tag
+  - var info = '相关文章累计 ' + page.posts.length + ' 篇文章'
+  != partial('./includes/mixins/page/top-bg',{title :title, info: info}, {cache: false})
   != partial('./includes/mixins/posts',{posts: page.posts},{ cache: false  })
   div.page_container
    .lists_nav

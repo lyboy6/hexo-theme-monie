@@ -1,6 +1,6 @@
 {
   "name": "monie",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "hexo-theme-monie 预览版 1.0.0",
   "main": "index.js",
   "scripts": {},
@@ -14,5 +14,5 @@
     "博客模板"
   ],
   "author": "yu_十三",
-  "license": "ISC"
+  "license": "MIT"
 }

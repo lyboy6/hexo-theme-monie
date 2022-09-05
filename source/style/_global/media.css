@@ -70,6 +70,10 @@
   .home_bg_container .left_info .goto_btn {
     justify-content: center;
   }
+
+  .home_bg_container .right_icon {
+    display: none;
+  }
 }
 
 

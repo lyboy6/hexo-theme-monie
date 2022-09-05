@@ -11,10 +11,10 @@ block content
         .article-copyright
           p
             = '标题: '
-            a(href="")= page.title 
+            a(href=url_for(page.path))= page.title 
           p 
             = '链接: '
-            a(href="")= page.permalink 
+            a(href=url_for(page.path))= config.url +  url_for(page.path)
           p 
             = '版权声明: 若无特殊标注皆为 '
             = config.author
