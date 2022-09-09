@@ -1,7 +1,7 @@
 - var pageTitle
 //- - is_archive() ? page.title = findArchivesTitle(page, theme.menu, date) : ''
-- if (is_tag()) pageTitle = _p('page.tag') + ': ' + page.tag
-- else if (is_category()) pageTitle = _p('page.category') + ': ' + page.category
+- if (is_tag()) pageTitle = page.tag
+- else if (is_category()) pageTitle = page.category
 - else pageTitle = page.title || config.title || ''
 - var isSubtitle = config.subtitle ? ' - ' + config.subtitle : ''
 - var tabTitle = is_home() || !pageTitle ? config.title + isSubtitle : pageTitle + ' | ' + config.title
@@ -20,6 +20,7 @@ meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-sca
 title= tabTitle
 if pageKeywords
   meta(name="keywords" content=pageKeywords)
+meta(name="keywords" content=config.description)
 
 link(rel="stylesheet", href=url_for('https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css'))
 link(rel='stylesheet', href=url_for('https://at.alicdn.com/t/c/font_3435803_wadmwlqwhps.css'))
