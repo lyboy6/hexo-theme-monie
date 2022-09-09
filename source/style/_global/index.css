@@ -48,6 +48,27 @@
   font-size: 1.099rem;
 }
 
+.article_items .article_content  h3 {
+  word-break: break-all;
+  font-size: 15px;
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  padding: 0 8px;
+  height: 44px;
+  margin: 5px 0
+}
+
+.article_items .article_content  a {
+  color: #616161;
+  /* padding: 5px 0; */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 .article_category {
   display: flex;
   justify-content: space-between;
@@ -69,6 +90,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-right: 1px;
+  margin-right: 4px;
 }
 
 .article_category .hot {
@@ -119,6 +141,7 @@
 
 .article_bottom .time .yufont {
   font-size: 12px;
+  margin-right: 4px;
 }
 
 
