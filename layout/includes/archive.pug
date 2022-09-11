@@ -9,7 +9,7 @@
         .left
           span.avatar
             != partial('./mixins/posts/avatar',{},{ cache: true })
-            a(href="/")= config.author 
+            include ./mixins/posts/author
           span
             i.yufont.icon-yingyong
             != partial('./mixins/posts/categories',{ categories: page.categories },{ cache: false  })

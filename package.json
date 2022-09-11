@@ -1,7 +1,7 @@
 {
-  "name": "monie",
+  "name": "hexo-theme-monie",
   "version": "1.2.0",
-  "description": "hexo-theme-monie 预览版 1.0.0",
+  "description": "hexo-theme-monie",
   "main": "index.js",
   "scripts": {},
   "repository": {
@@ -11,6 +11,7 @@
   "keywords": [
     "hexo",
     "monie",
+    "hexo模板",
     "博客模板"
   ],
   "author": "yu_十三",

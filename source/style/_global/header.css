@@ -388,17 +388,18 @@
 
 /* 分页 top  */
 .article_topbg {
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: relative;
-  padding: 160px 0;
+  padding: 180px 0;
   background-color: #394048;
   color: #eee;
   text-align: center;
   transition: all .3s ease-in-out;
   background-position: center center;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-image: url('/assets/imgs/top_bg.jpg');
+  animation: fade-in .5s;
 }
 
 .article_topbg:before {

@@ -5,7 +5,7 @@ favicon: /assets/imgs/favicon.ico
 logo: '/assets/imgs/logo.png'
 # Home Info
 home_info:
-  - info: 'Monie 1.0.0 预览版 正式完工了！！！'
+  - info: 'Monie  正式完工了！！！'
   - info: '这是我的个人博客，致力于帮助你以最直观、最快速的方式学会前端开发，并希望我的个人经历对你有所启发。'
 # Home 首页标题
 blog_title: '最新文章 · 资源上新'
@@ -17,12 +17,6 @@ avatar: '/assets/imgs/avatar.jpg'
 author_url: '/about'
 # 个人介绍
 author_desc: '不断学习，不断提升！'
-# 旗下业务
-blog_ascription:
-  - name: studynotes
-    url: http://note.13wl.cn
-  - name: pithyAPI
-    url: http://api.13wl.cn
 # Header
 menu:
   - menu_name: 首页

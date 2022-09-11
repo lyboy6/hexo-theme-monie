@@ -4,7 +4,7 @@
       != partial('../mixins/posts/avatar',{}, { cache: true  })
     .author_name
       h3
-        a(href="")= config.author
+       != partial('../mixins/posts/author',{}, { cache: true  })
       p= theme.author_desc
   .author_data
     ul

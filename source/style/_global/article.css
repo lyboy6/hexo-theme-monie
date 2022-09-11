@@ -1,3 +1,8 @@
+
+.log_container {
+  transition: all .3s;
+  animation: fade-out 1s;
+}
 .article_main .bread_guide {
   display: flex;
   justify-content: space-between;
@@ -103,7 +108,11 @@ blockquote {
 .content_text blockquote p {
   line-height: 26px;
 }
-
+.content_text p > code {
+  background-color: #f7f7f9;
+  color: var(--hover_color);
+  padding: 2px 4px;
+}
 
 
 .content_text h2,
@@ -476,4 +485,26 @@ ol.linenums {
 
 .relevant_article .article_items {
   box-shadow: 0 0 5px 0 #ececec;
+}
+.highlight pre {
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+/* 为了适配官方 代码高亮 */
+/* TODO 兼容的不是很好 建议 不使用官网的 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.highlight td{
+  display: table-cell !important;
+}
+
+.highlight td.gutter {
+  min-width: 40px;
+  width: 40px;
+  max-width: 100%;
 }
