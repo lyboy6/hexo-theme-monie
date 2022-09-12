@@ -22,4 +22,6 @@ block content
           p
            = '最后编辑时间: '
            = date(page.update,  'YYYY-MM-DD')
+        .page_turning
+          != thurning(page.next,page.prev)
     != partial('./includes/sidebar/sidebar',{page: page}, { cache: false  })

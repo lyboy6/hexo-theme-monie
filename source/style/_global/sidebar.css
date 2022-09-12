@@ -235,3 +235,14 @@
   font-size: 18px;
 }
 
+/* 侧边栏 分类 */
+
+.sidebar_tags .category-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar_tags .category-list li {
+  flex-shrink: 0;
+  width: 50%;
+  margin: 5px 0;
+}
