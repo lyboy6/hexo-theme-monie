@@ -67,6 +67,10 @@
   margin-right: 4px;
 }
 
+.home_bg_container .left_info .goto_btn>div a {
+  display: block;
+  color: #fff;
+}
 .home_bg_container>div {
   width: 50%;
 }

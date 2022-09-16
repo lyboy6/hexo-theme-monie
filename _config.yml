@@ -17,6 +17,9 @@ avatar: '/assets/imgs/avatar.jpg'
 author_url: '/about'
 # author desc
 author_desc: '不断学习，不断提升！'
+
+github_url: 'https://github.com/lyboy6/hexo-theme-monie'
+gitee_url: 'https://gitee.com/lyboy6/hexo-themes-monie'
 # Header
 menu:
   - menu_name: 首页
