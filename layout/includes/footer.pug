@@ -1,12 +1,15 @@
-footer
+footer.footer 
   .footer_bottom
     .footer_box
       .copy
-       a(href="/")='十三博客'
+       span= '主题'
+       a(href="https://hexo.io/zh-cn")='Hexo'
+       span= '模板'
+       a(href=url_for())='十三博客'
       .copy
         span
           = '© 2022'
-          a(href="/")='十三博客'
+          a(href=url_for())='十三博客'
           = '鲁ICP备2022003990号'
 script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js") 
 script(src=url_for('/assets/lib/prettify/prettify.js')) 

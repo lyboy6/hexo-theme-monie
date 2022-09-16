@@ -10,7 +10,9 @@
   padding: 15px;
   text-align: center;
 }
-
+.footer_box .copy span {
+  margin: 0 4px;
+}
 .footer a {color: #676b6f;}
 
 .footer a:hover {color: #fff;}
