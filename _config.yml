@@ -11,11 +11,11 @@ home_info:
 blog_title: '最新文章 · 资源上新'
 # Home 首页Info
 blog_des: '授人以鱼，不如授人以渔。业精于勤，荒于嬉；行成于思，毁于随。'
-# 头像
+# author avatar
 avatar: '/assets/imgs/avatar.jpg'
-#个人主页
+# author home
 author_url: '/about'
-# 个人介绍
+# author desc
 author_desc: '不断学习，不断提升！'
 # Header
 menu:
