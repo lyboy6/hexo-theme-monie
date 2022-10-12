@@ -201,7 +201,8 @@ pre.prettyprint {
   background-color: #333;
   padding: 10px;
   border-radius: 5px;
-  margin: 5px 0
+  margin: 5px 0;
+  overflow-x: auto;
 }
 
 pre .nocode {
